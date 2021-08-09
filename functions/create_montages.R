@@ -5,7 +5,7 @@
 
 library(dplyr)
 
-create_montages <- function(project, magdy_std_path="~/luna/libs/Magdy_Montages_Standards.csv") {
+create_montages <- function(project, magdy_std_path="~/luna_channel_standards/libs/Magdy_Montages_Standards.csv") {
         
         final_headers <- read.table(paste0(project, "_post_std_headers.txt"), header = T, sep = "\t", stringsAsFactors = F, fill = T)
         final_headers_list <- split(final_headers$CH, final_headers$ID)

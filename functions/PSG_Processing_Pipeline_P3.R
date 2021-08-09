@@ -58,12 +58,12 @@ std_channel <- "ABDOMEN,EEG_C3,EEG_C4,EMG_CHIN1,EMG_CHIN2,EOG_E1,EOG_E2,ECG,EEG_
 std_channel_referenced <- "ABDOMEN,ECG,AIRFLOW_NC,HR,LAT,RAT,BODY_POSITION,EXPIRATORY_PRESSURE,SNORE,SPO2,AIRFLOW_TH,CHEST,EEG_C3_M2,EEG_C4_M1,EMG_CHIN,EEG_F3_M2,EEG_F4_M1,EOG_E1_M,EEG_O1_M2,EEG_O2_M1,EOG_E2_M"
 
 # Load luna
-system("module load luna-base/0.2")
+# system("module load luna-base/0.2") # running on docker
 
 # Load accessory function
-source("~/luna/functions/reference_channels.R")
-source("~/luna/functions/keep_channels.R")
-source("~/luna/functions/create_montages.R")
+source("~/luna_channel_standards/functions/reference_channels.R")
+source("~/luna_channel_standards/functions/keep_channels.R")
+source("~/luna_channel_standards/functions/create_montages.R")
 
 
 
