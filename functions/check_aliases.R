@@ -43,7 +43,7 @@ check_aliases <- function(universal_alias, project, sample_list, bad=NULL) {
         
         
         # Load most current alias
-        system("module load luna-base/0.2")
+        #system("module load luna-base/0.2")
         #universal_alias <- "../libs/fixed_alias_SAGIC.txt"
         #sample_list  <- "BOSA.lst"
         #bad <- NULL
