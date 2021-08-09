@@ -1,0 +1,22 @@
+Montages,Standards
+Abdomen,ABDOMEN
+Audio,SNORE
+Body Position,BODY_POSITION
+Chest,CHEST
+CPAP flow,CPAP_FLOW
+Expiratory Pressure,EXPIRATORY_PRESSURE
+Inspiratory Pressure,INSPIRATORY_PRESSURE
+Chin EMG,EMG_CHIN
+EEG 1,EEG_C3_M2
+EEG 2,EEG_C4_M1
+EKG,ECG
+End tidal CO2,ET_CO2
+Transcutaneous CO2,TRANS_CO2
+Heart rate,HR
+Left eye EOG,EOG_E1_M
+Left leg EOG,LAT
+Nasal Cannula,AIRFLOW_NC
+Right eye EOG,EOG_E2_M
+Right leg EMG,RAT
+O2 Saturation,SPO2
+Thermister,AIRFLOW_TH
