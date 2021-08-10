@@ -106,21 +106,15 @@ check_aliases <- function(universal_alias, project, sample_list, bad=NULL) {
                                 
                                 
                                 
-                                cat("Is this correct? (1-yes, 2-No, 3-cancel)\n")
-                                #n <- readLines('stdin', n = -1)
+                                #cat("Is this correct? (1-yes, 2-No, 3-cancel)\n")
+                                #n <- readLines(con='stdin', n = -1)
                                 #print(n)
-
-                                read_user <- function()
-                                { 
-                                        n <- readline(prompt="Answer: ")
-                                        return(n)
-                                }
-                                n <- read_user()
-
-                                print(paste("You answered:", read_user()))
                                 
+                                n <- askYesNo(msg = "Is this correct?")
                                 
-                                if (n=="1") {
+
+                                
+                                if (n==T) {
                                         # Add ch to corresponding row in current_alias
                                         candidate_df[candidate_df$candidates_short==cand,"assigned"] <- T
                                         message("Good!")
@@ -128,12 +122,12 @@ check_aliases <- function(universal_alias, project, sample_list, bad=NULL) {
                                         ok=T
                                         skip=T
                                         break()
-                                } else if (n=="2") {
+                                } else if (n==F) {
                                         # keep ch as non-resolved
                                         message("No problem.")
                                         cat("\n")
                                         ok=T
-                                } else if (n=="3") {
+                                } else if (is.na(n)) {
                                         stop("check_aliases cancelled.")
                                 } else {
                                         message("Must provide valid answer.")
