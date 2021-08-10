@@ -106,11 +106,11 @@ check_aliases <- function(universal_alias, project, sample_list, bad=NULL) {
                                 
                                 
                                 
-                                #cat("Is this correct? (1-yes, 2-No, 3-cancel)\n")
-                                #n <- readLines(con='stdin', n = -1)
-                                #print(n)
+                                cat("Is this correct? (1-yes, 2-No, 3-cancel)\n")
+                                n <- readLines(con='stdin', n = -1)
+                                print(n)
                                 
-                                n <- askYesNo(msg = "Is this correct?")
+                                #n <- askYesNo(msg = "Is this correct?")
                                 
 
                                 
