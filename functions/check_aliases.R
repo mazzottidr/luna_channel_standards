@@ -109,15 +109,13 @@ check_aliases <- function(universal_alias, project, sample_list, bad=NULL) {
                                 cat("Is this correct? (1-yes, 2-No, 3-cancel)\n")
                                 #n <- readLines('stdin', n = -1)
                                 #print(n)
-                                #Chang
-                                
+
                                 read_user <- function()
                                 { 
                                         n <- readline(prompt="Answer: ")
                                         return(n)
                                 }
                                 
-                                n <- read_user()
                                 print(paste("You answered:", read_user()))
                                 
                                 
