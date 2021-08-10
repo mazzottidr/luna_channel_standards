@@ -114,7 +114,7 @@ check_aliases <- function(universal_alias, project, sample_list, bad=NULL) {
                                 
 
                                 
-                                if (n==T) {
+                                if (n=="1") {
                                         # Add ch to corresponding row in current_alias
                                         candidate_df[candidate_df$candidates_short==cand,"assigned"] <- T
                                         message("Good!")
@@ -122,12 +122,12 @@ check_aliases <- function(universal_alias, project, sample_list, bad=NULL) {
                                         ok=T
                                         skip=T
                                         break()
-                                } else if (n==F) {
+                                } else if (n=="2") {
                                         # keep ch as non-resolved
                                         message("No problem.")
                                         cat("\n")
                                         ok=T
-                                } else if (is.na(n)) {
+                                } else if (n=="3") {
                                         stop("check_aliases cancelled.")
                                 } else {
                                         message("Must provide valid answer.")
