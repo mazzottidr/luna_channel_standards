@@ -115,7 +115,8 @@ check_aliases <- function(universal_alias, project, sample_list, bad=NULL) {
                                         n <- readline(prompt="Answer: ")
                                         return(n)
                                 }
-                                
+                                n <- read_user()
+
                                 print(paste("You answered:", read_user()))
                                 
                                 
