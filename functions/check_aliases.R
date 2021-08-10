@@ -109,7 +109,10 @@ check_aliases <- function(universal_alias, project, sample_list, bad=NULL) {
                                 cat("Is this correct? (1-yes, 2-No, 3-cancel)\n")
                                 #n <- readLines('stdin', n = -1)
                                 #print(n)
+<<<<<<< HEAD
                                 #Chang
+=======
+>>>>>>> 994c0774b58fa27c8a559814865250c0de0e0fbb
                                 
                                 read_user <- function()
                                 { 
@@ -117,7 +120,10 @@ check_aliases <- function(universal_alias, project, sample_list, bad=NULL) {
                                         return(n)
                                 }
                                 
+<<<<<<< HEAD
                                 n <- read_user()
+=======
+>>>>>>> 994c0774b58fa27c8a559814865250c0de0e0fbb
                                 print(paste("You answered:", read_user()))
                                 
                                 
